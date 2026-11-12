@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "auto-spear",
+  "version": "${version}",
+  "name": "Auto Spear",
+  "description": "AutoSpear module for Meteor Client: dive-bomb spear charges with an elytra, jabs on foot.",
+  "authors": [
+    "Arsonist-567"
+  ],
+  "environment": "client",
+  "entrypoints": {
+    "meteor": [
+      "arsonist.autospear.AutoSpearAddon"
+    ]
+  },
+  "custom": {
+    "meteor-client:color": "189,153,255",
+    "modmenu": {
+      "parent": {
+        "id": "meteor-client"
+      }
+    }
+  },
+  "depends": {
+    "java": ">=21",
+    "minecraft": ["${mc_version}"],
+    "meteor-client": "*"
+  }
+}
